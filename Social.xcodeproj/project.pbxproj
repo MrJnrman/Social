@@ -70,6 +70,7 @@
 		EBF9B59F1EB5B57B0097531E /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		EBF9B5A11EB5B77C0097531E /* FancyText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyText.swift; sourceTree = "<group>"; };
 		EBF9B5A31EB5B8040097531E /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		EBF9B5A51EB640D50097531E /* Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Social.entitlements; sourceTree = "<group>"; };
 		F6BF6A802A873F65477F3D08 /* Pods-SocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTests/Pods-SocialTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +137,7 @@
 		EBF9B5661EB59A640097531E /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				EBF9B5A51EB640D50097531E /* Social.entitlements */,
 				EBF9B59C1EB5B3BD0097531E /* Util */,
 				EBF9B5991EB59C2E0097531E /* Controller */,
 				EBF9B5981EB59C280097531E /* View */,
@@ -294,6 +296,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = P23AMFJ96N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					EBF9B5771EB59A640097531E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -661,6 +668,7 @@
 			baseConfigurationReference = DCEF0F3929A0809ABCEEB053 /* Pods-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Social/Social.entitlements;
 				DEVELOPMENT_TEAM = P23AMFJ96N;
 				INFOPLIST_FILE = Social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -675,6 +683,7 @@
 			baseConfigurationReference = 096BBCB523F9B0D73146D69A /* Pods-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Social/Social.entitlements;
 				DEVELOPMENT_TEAM = P23AMFJ96N;
 				INFOPLIST_FILE = Social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
