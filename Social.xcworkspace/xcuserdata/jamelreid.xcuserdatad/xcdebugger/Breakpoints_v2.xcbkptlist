@@ -151,11 +151,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Social/SignInVC.swift"
-            timestampString = "515261145.952751"
+            timestampString = "515275081.889047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "FBBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>

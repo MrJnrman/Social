@@ -12,6 +12,10 @@ import FacebookCore
 import Firebase
 
 class SignInVC: UIViewController {
+    
+    @IBOutlet weak var emailTextField: FancyText!
+    @IBOutlet weak var passwordTextField: FancyText!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +57,30 @@ class SignInVC: UIViewController {
                 }
             }
         })
+    }
+    
+    @IBAction func SigninPressed(_ sender: UIButton) {
+        
+        print("here")
+       
+        if let email = emailTextField.text, let pwd = passwordTextField.text {
+            
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                
+                if error == nil {
+                    print("Email User authenticated with Firebase")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: {(user, error) in
+                        
+                        if error == nil {
+                            print("Email User Created with Firebase")
+                        } else {
+                             print("Error occured - \(String(describing: error))")
+                        }
+                    })
+                }
+            })
+        }
     }
 
 }
