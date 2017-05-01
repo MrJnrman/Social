@@ -10,8 +10,10 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +21,7 @@ class FeedVC: UIViewController {
     }
 
     
-    @IBAction func signOutBtnPressed(_ sender: UIButton) {
+    @IBAction func signOutBtnPressed(_ sender: UIImageView) {
         
         let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: KEY_UID)        
         if removeSuccessful == true {
