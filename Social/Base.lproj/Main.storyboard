@@ -127,11 +127,46 @@
                     <connections>
                         <outlet property="emailTextField" destination="DtK-EP-HyJ" id="dvV-y5-7wP"/>
                         <outlet property="passwordTextField" destination="Qgn-Ve-qkW" id="kHk-tC-yKo"/>
+                        <segue destination="aka-dn-uxe" kind="show" identifier="gotoFeed" id="nOZ-O3-KuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.875" y="137.32394366197184"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="9qk-sk-yCl">
+            <objects>
+                <viewController id="aka-dn-uxe" customClass="FeedVC" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mBM-t2-jhN"/>
+                        <viewControllerLayoutGuide type="bottom" id="qOo-xp-15l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LcV-4V-YKb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRY-L2-w7J">
+                                <rect key="frame" x="97" y="269" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutBtnPressed:" destination="aka-dn-uxe" eventType="touchUpInside" id="NVo-ml-lz7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90415472389999996" green="0.4189750351" blue="0.92683217009999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="backToSignIn" id="9v6-TZ-RoM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f52-RR-kbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083.75" y="136.26760563380282"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,7 @@ target 'Social' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FacebookLogin'
+  pod 'SwiftKeychainWrapper'
 
   target 'SocialTests' do
     inherit! :search_paths

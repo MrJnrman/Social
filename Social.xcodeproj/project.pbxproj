@@ -10,6 +10,7 @@
 		0462CC19000122710E097165 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE94A905AD1760AAB86B67F /* Pods_Social.framework */; };
 		BCFF2C042DCBA3B27B576E0C /* Pods_SocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22846C690357BF910A26C8 /* Pods_SocialTests.framework */; };
 		CC05723F7590D4A4EA4B690D /* Pods_SocialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6299389514EFE35502016423 /* Pods_SocialUITests.framework */; };
+		EB69F6ED1EB6946C00CA1121 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69F6EC1EB6946C00CA1121 /* FeedVC.swift */; };
 		EBF9B5681EB59A640097531E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF9B5671EB59A640097531E /* AppDelegate.swift */; };
 		EBF9B56A1EB59A640097531E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF9B5691EB59A640097531E /* SignInVC.swift */; };
 		EBF9B56D1EB59A640097531E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF9B56B1EB59A640097531E /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		6F22846C690357BF910A26C8 /* Pods_SocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3D91EEE357AD6920895A54 /* Pods-SocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTests/Pods-SocialTests.release.xcconfig"; sourceTree = "<group>"; };
 		DCEF0F3929A0809ABCEEB053 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
+		EB69F6EC1EB6946C00CA1121 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		EBF9B5641EB59A640097531E /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF9B5671EB59A640097531E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF9B5691EB59A640097531E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF9B5691EB59A640097531E /* SignInVC.swift */,
+				EB69F6EC1EB6946C00CA1121 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				EBF9B5A01EB5B57B0097531E /* RoundButton.swift in Sources */,
 				EBF9B5681EB59A640097531E /* AppDelegate.swift in Sources */,
 				EBF9B5A41EB5B8040097531E /* FancyButton.swift in Sources */,
+				EB69F6ED1EB6946C00CA1121 /* FeedVC.swift in Sources */,
 				EBF9B59B1EB5B33D0097531E /* FancyView.swift in Sources */,
 				EBF9B5A21EB5B77C0097531E /* FancyText.swift in Sources */,
 				EBF9B59E1EB5B3C90097531E /* Constants.swift in Sources */,
